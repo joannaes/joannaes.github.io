@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:300');
+/*ewentualnie cookie jest ładne*/
+
+html, body, div, span, h1, h2, h3, p, big, img, ul, li, article, footer, header, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: 'Raleway';
+}
+
+article, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+}
+
+ul {
+    list-style: none;
+}
+
+#container {
+    width: 70em;
+    margin: 0 auto;
+    max-width: calc(100% - 4em);
+    padding: 4em 0 1em 0;
+}
+
+    #container > .main {
+        margin-bottom: 4em;
+    }
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #666666;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13pt;
+    font-weight: 200;
+    line-height: 1.65;
+}
+
+a {
+    -moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    -ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    transition: color 0.2s ease, border-bottom-color 0.2s ease;
+    text-decoration: none;
+    border-bottom: dotted 1px;
+}
+
+    a:hover {
+        border-bottom-color: transparent;
+    }
+
+p {
+    margin: 0 0 2em 0;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+    h1 a, h2 a, h3 a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.75em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+a {
+    color: inherit;
+}
+
+    a:hover {
+        color: #952615;
+    }
+
+h1, h2, h3 {
+    color: #444444;
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    -moz-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 3.5em;
+    line-height: 3.5em;
+    padding: 0 2em 0 2.375em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 0.325em;
+    font-size: 0.725em;
+}
+
+    .button.icon:before {
+        margin-right: 0.5em;
+    }
+
+    .button.big {
+        font-size: 0.8em;
+        padding: 0 2.5em 0 2.875em;
+        height: 3.75em;
+        line-height: 3.75em;
+    }
+
+.button {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px #666666;
+    color: #444444;
+}
+
+    .button:hover {
+        color: #952615;
+        box-shadow: inset 0 0 0 2px #952615;
+    }
+
+    .button:active {
+        background-color: rgba(149, 38, 21, 0.15);
+    }
+
+.icon {
+    text-decoration: none;
+    border-bottom: none;
+    position: relative;
+}
+
+    .icon.about {
+        display: inline-block;
+        margin: 0 0 1.5em 0;
+        width: 6.5em;
+        height: 5em;
+        background-image: url('../images/redcrane.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .icon.curriculum {
+        display: inline-block;
+        margin: 0 0 1.5em 0;
+        width: 6.5em;
+        height: 5em;
+        background-image: url('../images/plumcrane.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+.fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
+    color: #952615;
+}
+
+ul {
+    cursor: default;
+    list-style: none;
+    margin: 0 0 2em 0;
+}
+
+    ul.icons li {
+        padding-left: 0;
+        padding-right: 2em;
+        display: inline-block;
+    }
+
+        ul.icons li:last-child {
+            padding-right: 0.25em;	
+        }
+
+#header {
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: rgba(255, 255, 255, 0.75);
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-align-items: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -moz-justify-content: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 8em 0 6em 0;
+    
+    text-align: center;
+    position: relative;
+    cursor: default;
+}
+
+#header #animated {
+    top: 0;
+    position: absolute;
+    background-image: url("../images/seigaiha.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     -webkit-animation: fadein 4s; 
+    -moz-animation: fadein 4s; 
+    -ms-animation: fadein 4s;
+    -o-animation: fadein 4s;
+    animation: fadein 4s;
+    z-index: 0;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }    
+    
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+    #header h1 {
+        color: #ffffff;
+        margin-bottom: 0;
+        font-size: 7em;
+        padding: 0 0.25em 0 0.25em;
+        font-family: 'Kaushan Script', 'cursive';
+        text-transform: none;
+    }
+
+    #header:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 30%;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background-color: rgba(81, 45, 66, 0.9);
+         -webkit-animation: fadein 1s; 
+        -moz-animation: fadein 1s; 
+        -ms-animation: fadein 1s;
+        -o-animation: fadein 1s;
+        animation: fadein 1s;
+    }
+
+    #header div {
+        position: relative;
+        z-index: 1;
+    }
+
+    #header p {
+        text-transform: uppercase;
+        letter-spacing: 0.15rem;
+        font-weight: 400;
+        font-size: 0.8em;
+        padding: 0 1.25em;
+    }
+
+.info {
+    padding: 4em 4em 2em 4em;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.item {
+    padding: 3em 3em 1em 3em;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+}
+
+    .item header {
+        border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+        margin: -3em 0 3em -3em;
+        width: calc(100% + 6em);
+        height: 15em;
+        display: -moz-flex;
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        -moz-align-items: center;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+        -moz-justify-content: center;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        background-color: #ffffff;
+        color: rgba(255, 255, 255, 0.75);
+        position: relative;
+        overflow: hidden;
+    }
+
+        .item header h3 {
+            color: rgb(81, 45, 66);
+        }
+
+        .item header a {
+            -moz-transition: -moz-transform 0.2s ease; 
+            -webkit-transition: -webkit-transform 0.2s ease;
+            -ms-transition: -ms-transform 0.2s ease;
+            transition: transform 0.2s ease;/*!!! dodane, żeby animacja na pseudoelemencie hover była płynna. Musi być dodane tutaj a nie na hover, bo inaczej animacja po zjechaniu kursorem z elementu traci płynność.*/
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+
+            .item .reflection a:after {
+              position: absolute;
+              content: '';
+              height: 80%;
+              width: 100%;
+              top: -2%;
+              right: 0;
+              background-color: #ffffff;
+              transform: skewY(-6deg);
+              transform-origin: right top;
+              backface-visibility: hidden;
+              z-index: -1;
+            }
+
+            .item header a:after {
+              position: absolute;
+              content: '';
+              height: 80%;
+              width: 100%;
+              top: -2%;
+              left: 0;
+              background-color: #ffffff;
+              transform: skewY(6deg);
+              transform-origin: left top;
+              backface-visibility: hidden;
+              z-index: -1;
+            }
+
+        .item header:hover a {
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+
+        .item header > * {
+            position: relative;
+            z-index: 1;
+        }
+
+.items {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: calc(100% + 2em);
+    margin: -2em 0 0 -2em;
+}
+
+    .items .item {
+        margin: 2em 0 0 2em;
+        width: calc(50% - 2em);
+    }
+
+.contact {
+    text-align: center;
+}
+
+    .contact p {
+            margin-bottom: 1em;
+        }
+
+    .contact h2 {
+        margin-bottom: 0.5em;
+    }
+
+#footer {
+    text-align: center;
+}
+
+    #footer a {
+        color: inherit;
+    }
+
+    #footer .copyright {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
