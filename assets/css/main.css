@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:300');
 /*ewentualnie cookie jest ładne*/
 
-html, body, div, span, h1, h2, h3, p, big, img, ul, li, article, footer, header, section {
+html, body, div, span, h1, h2, h3, h4, p, big, img, ul, li, article, footer, header, section {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +21,10 @@ body {
 ul {
     list-style: none;
 }
+
+    ul.cv {
+        list-style: disc;
+    }
 
 #container {
     width: 70em;
@@ -65,12 +69,34 @@ p {
     margin: 0 0 2em 0;
 }
 
-h1, h2, h3 {
+    .name {
+        margin-top: 0.5em;
+        margin-bottom: 0;
+        color: #952615;
+        font-weight: 600;
+    }
+
+.name + p {
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 0.75em;
+}
+
+.cv, .cv + li {
+    padding-left: 2em;
+}
+
+h1, h2, h3, h4 {
     font-weight: 400;
     line-height: 1.5;
     margin: 0 0 1em 0;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
+}
+
+h4 {
+    font-weight: 900;
+    margin-bottom: 0.5em;
 }
 
     h1 a, h2 a, h3 a {
@@ -90,6 +116,10 @@ h3 {
     font-size: 1.25em;
 }
 
+h4 {
+    font-size: 1em;
+}
+
 a {
     color: inherit;
 }
@@ -98,7 +128,7 @@ a {
         color: #952615;
     }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     color: #444444;
 }
 
@@ -169,15 +199,20 @@ h1, h2, h3 {
         background-repeat: no-repeat;
     }
 
+#wrapper {
+    text-align: center;
+}
+
     .icon.curriculum {
         display: inline-block;
-        margin: 0 0 1.5em 0;
+        margin-bottom: 1.5em;
         width: 6.5em;
         height: 5em;
         background-image: url('../images/plumcrane.png');
         background-size: contain;
         background-repeat: no-repeat;
-    }
+        background-position: center;
+}
 
 .fa-github:hover, .fa-linkedin:hover, .fa-envelope:hover{
     color: #952615;
@@ -315,6 +350,15 @@ ul {
     padding: 4em 4em 2em 4em;
     background-color: #ffffff;
     border-radius: 4px;
+    text-align: center;
+}
+
+.experience {
+    padding: 4em 4em 2em 4em;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.experience > h2{
     text-align: center;
 }
 
